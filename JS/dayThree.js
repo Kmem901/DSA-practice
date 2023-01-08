@@ -17,3 +17,14 @@ const mostFrequentChar = (s) => {
     }
     return maxKey;
   };
+
+
+  const pairSum = (numbers, targetSum) => {
+    for (let x = 0; x < numbers.length - 1; x++) {
+      for (let y = 1; y < numbers.length; y++) {
+        if (numbers[x] + numbers[y] == targetSum) {
+          return [x, y]
+        }
+      }
+    }
+  };

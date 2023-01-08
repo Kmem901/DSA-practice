@@ -12,3 +12,10 @@ def most_frequent_char(s):
       max_value = value
       max_key = key
   return max_key
+
+
+def pair_sum(numbers, target_sum):
+    for x in range(len(numbers)-1):
+        for y in range(1, len(numbers)):
+            if numbers[x] + numbers[y] == target_sum:
+                return (x, y)
